@@ -1,0 +1,1 @@
+INSERT INTO UNIT_FORMULA (ID, UNIT_FROM, UNIT_TO, MULTIPLY_BY) VALUES (1, 'kilograms', 'pounds', 2.205), (2, 'meters', 'feet', 3.281), (3, 'inches', 'centimeters', 2.540);
