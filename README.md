@@ -5,7 +5,7 @@
 
 A back-end, REST API and microservices project for showcasing. Made with Spring Boot.
 
-Unit formulas microservice serves as a repository for storing, adding and deleting formulas for converting metric to imperial units. (port: 8000)
+Unit formulas microservice serves as a repository for storing, adding and deleting formulas for converting measurement units (e.g. metric to imperial). (port: 8000)
 
 Unit conversion microservice calls the unit formulas microservice and performs the actual conversion by adding a quantity parameter in the URL. (port: 8100)
 
@@ -48,6 +48,15 @@ http://localhost:8765/unit-conversion-feign/from/inches/to/centimeters/quantity/
 + create new formula
 
 http://localhost:8765/unit-formulas
+
+Sample body:
+
+{
+"id": 4,
+"from": "tons",
+"to": "kilograms",
+"multiplyBy": 907.2
+}
 
 
 ## DELETE
